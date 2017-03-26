@@ -1,0 +1,8 @@
+<div>
+    <p>The account balance is: {{ balance }}$</p>
+
+    <div data-ng-if="error" class="error-message" style="color: red;">{{ error }}</div>
+    <input type="text" [(ngModel)]="transfer" />
+    <button (click)="deposit()">Deposit</button>
+    <button (click)="withdraw()">Withdraw</button>
+</div>
